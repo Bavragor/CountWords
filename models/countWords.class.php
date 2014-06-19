@@ -30,9 +30,13 @@ class CountWords
             $oFileConversion = new PdfParser();
             $this->sFileText = utf8_decode($oFileConversion->parseFile($sFile));
         }
-        else
+        elseif($sFileExt == 'txt')
         {
             $this->sFileText = utf8_decode(file_get_contents($sFile));
+        }
+        else
+        {
+            $this->sFileText = '';
         }
     }
 

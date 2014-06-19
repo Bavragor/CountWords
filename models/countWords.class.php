@@ -42,9 +42,16 @@ class CountWords
 
     public function countWords()
     {
-        $this->iFileWords = $iWords = $this->count_words($this->sFileText);
+        if($this->sFileText != '')
+        {
+            $this->iFileWords = $iWords = $this->count_words($this->sFileText);
 
-        return $iWords;
+            return $iWords;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     protected function count_words($string)

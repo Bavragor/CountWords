@@ -6,8 +6,6 @@ if(!empty($_POST['sFilePath']))
 {
     $sFilePath = $_POST['sFilePath'];
     $oWordCount = new CountWords($sFilePath);
-
-    echo $oWordCount->sFileText;
 }
 
 ?>

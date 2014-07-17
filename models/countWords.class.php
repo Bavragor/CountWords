@@ -3,6 +3,8 @@
 require_once 'doc2txt.class.php';
 require_once 'PdfParser.php';
 
+require_once '/vendor/autoload.php';
+
 class CountWords
 {
     protected $sFilePath = '';
@@ -21,14 +23,17 @@ class CountWords
 
         if($sFileExt == 'doc' || $sFileExt == 'docx')
         {
-            $oFileConversion = new Doc2Txt($sFile);
+            $oFileConversion = \PhpOffice\PhpWord\IOFactory::load($sFile);
 
-            $this->sFileText = utf8_decode($oFileConversion->convertToText());
+	        print_r($oFileConversion);
+	        die();
+
+            //$this->sFileText = utf8_decode($oFileConversion->);
         }
         elseif($sFileExt == 'pdf')
         {
-            $oFileConversion = new PdfParser();
-            $this->sFileText = utf8_decode($oFileConversion->parseFile($sFile));
+            $oFileConversion = new Smalot\PdfParser\Parser();
+            $this->sFileText = utf8_decode($oFileConversion->parseFile($sFile)->getText());
         }
         elseif($sFileExt == 'txt')
         {

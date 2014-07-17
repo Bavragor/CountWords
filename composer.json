@@ -1,7 +1,6 @@
 {
 	"require": {
 		"smalot/pdfparser": "*",
-		"phpoffice/phpword": "dev-develop",
 		"mashape/unirest-php": "*"
 	}
 }

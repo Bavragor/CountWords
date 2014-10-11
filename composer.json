@@ -1,6 +1,5 @@
 {
 	"require": {
-		"smalot/pdfparser": "*",
-		"mashape/unirest-php": "*"
+		"smalot/pdfparser": "*"
 	}
 }

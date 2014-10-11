@@ -1,64 +1,5 @@
 [
     {
-        "name": "tecnick.com/tcpdf",
-        "version": "6.0.089",
-        "version_normalized": "6.0.089.0",
-        "source": {
-            "type": "git",
-            "url": "git://git.code.sf.net/p/tcpdf/code",
-            "reference": "979432f754965bc13960776df51cb28eabfc0938"
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2014-07-16 17:59:23",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "fonts",
-                "config",
-                "include",
-                "tcpdf.php",
-                "tcpdf_parser.php",
-                "tcpdf_import.php",
-                "tcpdf_barcodes_1d.php",
-                "tcpdf_barcodes_2d.php",
-                "include/tcpdf_colors.php",
-                "include/tcpdf_filters.php",
-                "include/tcpdf_font_data.php",
-                "include/tcpdf_fonts.php",
-                "include/tcpdf_images.php",
-                "include/tcpdf_static.php",
-                "include/barcodes/datamatrix.php",
-                "include/barcodes/pdf417.php",
-                "include/barcodes/qrcode.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPLv3"
-        ],
-        "authors": [
-            {
-                "name": "Nicola Asuni",
-                "email": "info@tecnick.com",
-                "homepage": "http://nicolaasuni.tecnick.com"
-            }
-        ],
-        "description": "TCPDF is a PHP class for generating PDF documents.",
-        "homepage": "http://www.tcpdf.org/",
-        "keywords": [
-            "PDFD32000-2008",
-            "TCPDF",
-            "barcodes",
-            "datamatrix",
-            "pdf",
-            "pdf417",
-            "qrcode"
-        ]
-    },
-    {
         "name": "smalot/pdfparser",
         "version": "v0.9.21",
         "version_normalized": "0.9.21.0",
@@ -104,54 +45,68 @@
         "homepage": "http://www.pdfparser.org"
     },
     {
-        "name": "mashape/unirest-php",
-        "version": "1.2.1",
-        "version_normalized": "1.2.1.0",
+        "name": "tecnick.com/tcpdf",
+        "version": "6.0.096",
+        "version_normalized": "6.0.096.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/Mashape/unirest-php.git",
-            "reference": "ff13801b7bc06a635054b3674a02588bd7d48be5"
+            "url": "https://github.com/tecnickcom/TCPDF.git",
+            "reference": "ff8799164231d5c99a69bee276ce33bcb7f52a54"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/ff13801b7bc06a635054b3674a02588bd7d48be5",
-            "reference": "ff13801b7bc06a635054b3674a02588bd7d48be5",
+            "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ff8799164231d5c99a69bee276ce33bcb7f52a54",
+            "reference": "ff8799164231d5c99a69bee276ce33bcb7f52a54",
             "shasum": ""
         },
         "require": {
-            "ext-curl": "*",
-            "ext-json": "*",
             "php": ">=5.3.0"
         },
-        "require-dev": {
-            "vierbergenlars/simpletest": "*"
-        },
-        "time": "2014-04-05 23:28:21",
+        "time": "2014-10-06 17:50:43",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Unirest": "lib"
-            }
+            "classmap": [
+                "fonts",
+                "config",
+                "include",
+                "tcpdf.php",
+                "tcpdf_parser.php",
+                "tcpdf_import.php",
+                "tcpdf_barcodes_1d.php",
+                "tcpdf_barcodes_2d.php",
+                "include/tcpdf_colors.php",
+                "include/tcpdf_filters.php",
+                "include/tcpdf_font_data.php",
+                "include/tcpdf_fonts.php",
+                "include/tcpdf_images.php",
+                "include/tcpdf_static.php",
+                "include/barcodes/datamatrix.php",
+                "include/barcodes/pdf417.php",
+                "include/barcodes/qrcode.php"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "MIT"
+            "LGPLv3"
         ],
         "authors": [
             {
-                "name": "Mashape",
-                "email": "support@mashape.com",
-                "homepage": "http://mashape.com"
+                "name": "Nicola Asuni",
+                "email": "info@tecnick.com",
+                "homepage": "http://nicolaasuni.tecnick.com"
             }
         ],
-        "description": "Unirest PHP",
-        "homepage": "https://github.com/Mashape/unirest-php",
+        "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+        "homepage": "http://www.tcpdf.org/",
         "keywords": [
-            "client",
-            "curl",
-            "http",
-            "rest"
+            "PDFD32000-2008",
+            "TCPDF",
+            "barcodes",
+            "datamatrix",
+            "pdf",
+            "pdf417",
+            "qrcode"
         ]
     }
 ]

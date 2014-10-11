@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Unirest' => array($vendorDir . '/mashape/unirest-php/lib'),
     'Smalot\\PdfParser\\' => array($vendorDir . '/smalot/pdfparser/src'),
 );

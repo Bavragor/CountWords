@@ -21,14 +21,10 @@ class CountWords
 
         $this->sFileExt = $sFileExt = pathinfo($sFile, PATHINFO_EXTENSION);
 
-        if($sFileExt == 'doc' || $sFileExt == 'docx')
+        if($sFileExt == 'docx')
         {
-            $oFileConversion = \PhpOffice\PhpWord\IOFactory::load($sFile);
-
-	        print_r($oFileConversion);
-	        die();
-
-            //$this->sFileText = utf8_decode($oFileConversion->);
+            $fileParser = new Doc2Txt($sFile);
+            $this->sFileText = $fileParser->convertToText();
         }
         elseif($sFileExt == 'pdf')
         {
